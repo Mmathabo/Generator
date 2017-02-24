@@ -5,9 +5,9 @@
         .module('signatureGenApp')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope'];
+    HomeController.$inject = ['$scope', '$http'];
 
-    function HomeController($scope) {
+    function HomeController($scope, $http) {
         var vm = this;
         vm.userDetails = null;
 
