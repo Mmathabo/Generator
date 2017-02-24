@@ -1,0 +1,51 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-8">
+            <p class="lead">Signature Generator</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                </div>
+                <div class="form-group" style="    margin-top: 46px">
+                    <label class="control-label col-sm-2" for="name">Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name"
+                               ng-model="app.userDetails.name">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="surname">Surname:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="surname" placeholder="Enter Surname" ng-model="app.userDetails.surname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="role">Role:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="role" placeholder="eg Developer" ng-model="app.userDetails.role">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cellNumber">Cell Number:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="cellNumber" placeholder="Enter Cell Number" ng-model="app.userDetails.cellNumber">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" ng-click="app.submit(userDetails)">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <p>
+        <span>copyright reserved 2017 </span>
+    </p>
+</div>
+
